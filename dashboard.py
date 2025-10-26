@@ -49,7 +49,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load and preprocess the training data"""
-    train_df = pd.read_csv("C:/Users/Joanna Gutierrez/Downloads/proj-data-science/train.csv", on_bad_lines='skip')
+    train_df = pd.read_csv("socialmedia_traindata.csv", on_bad_lines='skip')
     train_df = train_df.dropna()
     train_df['Age'] = pd.to_numeric(train_df['Age'], errors='coerce')
     train_df['Age'].fillna(train_df['Age'].median(), inplace=True)
