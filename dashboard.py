@@ -82,7 +82,7 @@ try:
     data_loaded = True
 except Exception as e:
     st.error(f"Error loading data: {e}")
-    st.info("Please make sure the CSV file is in the correct location: C:/Users/Joanna Gutierrez/Downloads/proj-data-science/train.csv")
+    st.info("Please make sure the CSV file is in the correct location")
     data_loaded = False
 
 # Sidebar
